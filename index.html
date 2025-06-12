@@ -9,51 +9,81 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", sans-serif;
-}
+        /* Apply Montserrat font to specific elements as per your original CSS */
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Montserrat", sans-serif;
+        }
 
-.w3-row-padding img {
-  margin-bottom: 12px;
-}
+        /* Default font for overall consistency and readability */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
 
-.bgimg {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
+        .w3-row-padding img {
+            margin-bottom: 12px;
+        }
 
-.bgimg video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-}
+        /*
+            --- AMENDED VIDEO STYLES ---
+            Instead of a full-screen background, we create a responsive wrapper
+            that maintains a 16:9 aspect ratio and contains the video.
+        */
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio (height / width * 100%) */
+            height: 0; /* Important for padding-bottom trick */
+            overflow: hidden;
+            border-radius: 12px; /* Added for aesthetic rounded corners */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Added for a subtle shadow */
+        }
 
-.slider-container {
-  position: relative;
-  width: 100%;
-  max-width: 800px; /* Adjust as needed */
-  margin: auto;
-  margin-left: 15%;
-  margin-top: 2%;
-}
+        .video-wrapper video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures video fills the wrapper while maintaining aspect ratio */
+        }
 
-.slides {
-  display: none;
-  width: 100%;
-}
+        /* Your existing slider styles (might need HTML to demonstrate fully) */
+        .slider-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px; /* Adjust as needed */
+            margin: auto;
+            margin-left: 15%; /* Consider adjusting this for responsiveness */
+            margin-top: 2%;  /* Consider adjusting this for responsiveness */
+        }
 
+        .slides {
+            display: none;
+            width: 100%;
+        }
+
+        /* Additional responsive adjustments for the main content area */
+        @media (min-width: 768px) { /* md: breakpoint and up */
+            .main-content-area {
+                flex-direction: row; /* Arrange items in a row */
+                align-items: flex-start; /* Align items to the top */
+            }
+            .video-section {
+                flex: 1; /* Allow video section to grow */
+                min-width: 300px; /* Ensure a minimum width for the video */
+            }
+            .text-and-slider-section {
+                flex: 2; /* Allow text/slider section to take more space */
+            }
+        }
 
 
 </style>
