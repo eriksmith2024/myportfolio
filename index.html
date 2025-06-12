@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Erik Smith Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/style.css" rel="stylesheet"/>
+
+<script type="text/javascript" src="JavaScript/functionality.js"></script>
+
+
+<!--I wanted to refresh on utilizing a template. I utilized a W3 schools template for my portfolio to test
+ my ability to manipulate it as I wish-->
+
+ <!--https://www.w3schools.com/w3css/w3css_templates.asp Accessed 31st Jan 2025 for portfolio template to amend and manipulate-->
+
+<!--Also installed the spellchecker following feedback from last task-->
+
+
+</head>
+<body>
+
+<!-- Sidebar with video: I just wanted to experiment with different media -->
+
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+    <div class="bgimg">
+        <video id="myVideo" autoplay muted loop playsinline>
+            <source src="images/myvideo.mp4" type="video/mp4">
+        </video>
+      </div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()">Menu  <i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:30px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Erik Smith</b></h1>
+    <h2> <b>Making your software development problems like a tranquil beach click & </b><button id="toggleMute">Listen</button></h2>
+    <p>Full Stack Software Engineer & Web Designer.</p>
+    <img src="images/indiasun.jpg"  style="display:block;width:40%;margin:auto;"/>
+   
+  
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About</h2>
+    <hr class="w3-opacity">
+    <p>A passionate & driven Software Developer with expertise in HTML, CSS, JavaScript jQuery, Angular, MySQL, Python & the MERN stack. 
+        Transitioned from a 15+ year career in HR, I bring a unique blend of problem-solving, collaboration & project management skills to 
+        software development. My background in process optimization, data analysis & stakeholder management complements my technical expertise, 
+        allowing me to build scalable, user-centric solutions. Currently excelling on Imperial College’s Web Development Course, topping my 
+        bootcamp & ranking in the top 15 student performance of all time across all software development courses. I am eager to apply my 
+        skills developing creative websites or open to work in a collaborative & innovative development environment.
+    </p>
+
+
+    <h3 class="w3-padding-16">My Skills & Strengths:
+        <button><a href="https://www.hyperiondev.com/portfolio/ES24110015904/">Imperial University Verified</a></button>
+        <button><a href="http://www.linkedin.com/in/erik-smith-ba-ma-mcipd">W3Schools Certified</a></button>
+    </h3>
+      
+       
+    <p class="w3-wide">HTML CSS Web Creation </p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:100%">100% </div>
+    </div>
+    <p class="w3-wide">Web Page Functionality JavScript & Frameworks i.e. Angular</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:100%">100%</div>
+    </div>
+    <p class="w3-wide">Figma Web Design</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
+    </div>
+    <p class="w3-wide">APIs & Database Connection</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:100%">100%</div>
+    </div>
+    <p class="w3-wide">MSQL Backend Development</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+      <p class="w3-wide">Full Stack Development with MERN or MEAN</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:100%">100%</div>
+      </div>
+    </div><br>
+
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">14+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div>
+
+
+    <button>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <a class="fa fa-download" href="http://eriksmith.great-site.net/online_CV.html#career">View Resume</a> 
+    </button>
+
+
+       <!-- Portfolio Section -->
+       <div class="w3-padding-32 w3-content" id="portfolio">
+        <h2 class="w3-text-grey">My Portfolio: </h2>
+        <hr class="w3-opacity">
+    
+        <!-- Portfolio Slider -->
+        <!-- Portfolio Slider -->
+<div class="slider-container">
+  <h2 class="w3-text-grey">Cafes | Bars | Rest APIs | Full Stack Car Showroom</h2>
+  <div class="slides"><img src="images/maincoffeshopmain.webp" style="width:80%; height: 80%;"></div>
+  <div class="slides"><img src="images/sweetshop.webp" style="width:80%"></div>
+  <div class="slides"><img src="images/restuarant.jpg" style="width:80%"></div>
+  <div class="slides"><img src="images/mainbar.png" style="width:80%"></div>
+  <div class="slides"><img src="images/carShowroom.jpeg" style="width:80%"></div>
+  <div class="slides"><img src="images/bankAppPic.jpg" style="width:80%"></div>
+  <div class="slides"><img src="images/website_large.jpg" style="width:80%"></div>
+</div>
+
+
+
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24">Project Work Feedback</h3>
+    <p><span class="w3-large w3-text-black w3-margin-right">Daniel Smith.</span> Programmer & Founder NuEpos.</p>
+    <p>Erik Smith is just awesome. I am so happy to have know him.</p><br>
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <a href="https://eriksmith.great-site.net/Restaurant/mealdeal_index.html">View Restaurant Project</a> 
+    </button>
+
+   
+    <p><span class="w3-large w3-text-black w3-margin-right">Laney Boyd.</span> CEO at HypDev.</p>
+    <p>Erik Smith worked with us to create a web masterpiece.</p><br>
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <a href="https://itunesapiwebsite.onrender.com">Itunes API Multimedia Project</a> 
+    </button>
+    
+    <p><span class="w3-large w3-text-black w3-margin-right">Jeremy Cox.</span> CEO at Second Hand Car Company.</p>
+    <p>No one is better at making you a snazzy website than Erik Smith.</p><br>
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <a href="https://itunesapiwebsite.onrender.com/">View Car Online Showroom Project</a> 
+    </button>
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16">My Services</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Front-End Only</li>
+          <li class="w3-padding-16">Website Design</li>
+          <li class="w3-padding-16">Website Creation</li>
+          <li class="w3-padding-16">Domain & Server Set up</li>
+          <li class="w3-padding-16">1 months maintenance</li>
+          <li class="w3-padding-16">
+            <h2>£ 1000</h2> 
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Enquire</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">Full Stack Development</li>
+          <li class="w3-padding-16">Website Design & Creation</li>
+          <li class="w3-padding-16">Back-End database Set Up</li>
+          <li class="w3-padding-16">Domain & Server Set Up</li>
+          <li class="w3-padding-16">API front & back end set up</li>
+          <li class="w3-padding-16">
+            <h2>£ 2500</h2>
+         
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Enquire</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+  <!-- End About Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact Me</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> London, UK</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +44773333333</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    </div>
+    
+
+   
+    <p>Lets get in touch. Send me a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>  
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+
+
+
+</body>
+</html>
