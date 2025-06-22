@@ -66,4 +66,4 @@ function plusSlides(n) {
   slides[slideIndex - 1].style.display = "block";
 }
 
-showSlides(); // Start the automatic slideshow
+// showSlides(); Start the automatic slideshow
